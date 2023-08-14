@@ -168,6 +168,9 @@ margin-top: 20px;
 /* features-section */
 .features-section{
     padding: 80px var(--padding-inline-section) 0;
+    background-image: url(image/bg\ image.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .features-header{
     text-align: center;
@@ -175,4 +178,18 @@ margin-top: 20px;
 
 .features-header h2{
     margin-bottom: 20px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    text-align: center;
 }
