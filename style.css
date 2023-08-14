@@ -193,3 +193,54 @@ margin-top: 20px;
     width: 30%;
     text-align: center;
 }
+
+/* big-featuer-section */
+.big-featuers-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-features-continaer{
+    gap: 30px;
+}
+.features-img img{
+    width: 100%;
+}
+
+/* examples-section */
+.examples-header{
+    flex-direction: column;
+    gap: 20px;
+}
+.example-area{
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.example-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: rgb(8, 8, 8);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(image/cover_tasks.jpg);
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+
+.example-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+
+
+
+
+.sub-footer{
+    margin-bottom: 100px;
+}
