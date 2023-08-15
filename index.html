@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-querise.css">
   </head>
   <body>
     <!-- top-banner  -->
@@ -19,7 +20,7 @@
             <a href="#" class="company-logo">
                 <img src="image/_UHLogo_standard.png" alt="">
             </a>
-            <div class="nav-link">
+            <div class="nav-link active" id="nav-link">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Product</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -28,6 +29,11 @@
                     <li><a href="#" class="hover-link secondary-btn">Sing in</a></li>
                     <li><a href="#" class="hover-link primary-btn">Sing up</a></li>
                 </ul>
+            </div>
+            <div>
+                <a href="#" class="nav-toggle hover-link" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -128,7 +134,7 @@
         </div>
     </section>
     <section class="big-featuers-section">
-        <div class="container flex big-features-continaer">
+        <div class="container flex big-features-continaer" id="second-big-features">
             <div class="features-text">
                 <h4>Optimisation for</h4>
                 <h3>Marketers</h3>
@@ -240,5 +246,14 @@
       src="https://kit.fontawesome.com/8699cfdb9e.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const menuLink = document.getElementById('nav-link');
+
+        toggleBtn.addEventListener('click',()=>{
+            menuLink.classList.toggle('active');
+        })
+    </script>
   </body>
 </html>

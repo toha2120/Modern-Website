@@ -1,0 +1,94 @@
+@media screen and (max-width: 991px) {
+    h3{
+        font-size: 1.2rem;
+    }
+ 
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .main-nav{
+        justify-content: space-between;
+        overflow: initial;
+    }
+    .nav-link{
+       position: absolute;
+       background-color: white;
+       left: -100%;
+       top: 100%;
+       width: 100%;
+       padding-block: 20px;
+       transition: 0.2s ease-in-out;
+    }
+    .nav-link.active{
+        left: 0;
+    }
+    .nav-link ul{
+        flex-direction: column;
+    }
+    .example-area{
+        gap: 20px;
+    }
+    .example-card{
+        width: 48%;
+        height: 200px;
+    }
+    .cta-section{
+        padding-block: 80px;
+    }
+}
+@media screen and (max-width:767px) {
+    .primary-btn{
+        width: 100%;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        text-align: center;
+    }
+
+    .features-card{
+        width: 40% ;
+    }
+
+    .big-features-continaer{
+        flex-direction: column;
+    }
+    #second-big-features{
+        flex-direction: column-reverse;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-column{
+        align-items: stretch;
+        
+    }
+}
+@media screen and (max-width:479px){
+    :root {
+        --padding-inline-section: 10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+   p{
+    font-size: 1rem;
+   }
+
+   .features-card{
+    width: 100% ;
+    }
+    .example-card{
+        width: 100%;
+
+    }
+}
